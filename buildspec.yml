@@ -1,12 +1,10 @@
-#A buildspec is a collection of build commands and related settings - in YML format - that CodeBuild uses to run a build
-
 version: 0.2
 
 phases:
   build:
     commands:
       - java -version
-       - mvn clean package
+      - mvn clean package
 artifacts:
   files:
     - 'Dockerfile'
